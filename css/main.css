@@ -4,6 +4,7 @@
 
 .header{
 	margin: 35px 0;
+	color: #86A2A0;
 }
 
 .tweet{
@@ -12,13 +13,13 @@
 
 .tweetBody{
 	height: 200px;
-	background-color: blue;
-	color: white;
+	background-color: #F6F9F9;
+	color: #6C958D;
 	padding: 10px;
 }
 
 .tweetAuthor{
-	background-color: green;
+	color: #B4B2B2;
 	padding: 0px;
 }
 
