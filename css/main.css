@@ -1,0 +1,27 @@
+*{
+	border: 1px solid red;
+}
+
+.header{
+	margin: 35px 0;
+}
+
+.tweet{
+	padding: 10px;
+}
+
+.tweetBody{
+	height: 200px;
+	background-color: blue;
+	color: white;
+	padding: 10px;
+}
+
+.tweetAuthor{
+	background-color: green;
+	padding: 0px;
+}
+
+.authorImage{
+	border-radius: 50%;
+}
