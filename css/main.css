@@ -62,3 +62,10 @@
 	width: 60px;
 }
 
+.authorImage:hover{
+	-webkit-filter: brightness(50%);
+	-moz-filter: brightness(50%);
+	-o-filter: brightness(50%);
+	-ms-filter: brightness(50%);
+}
+
