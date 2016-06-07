@@ -72,16 +72,16 @@
 	</div>
 
 	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script>
 		function Desaparece() {
-		    $('#tweetsContainer').addClass('animated fadeOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				$('#tweetsContainer').removeClass('fadeOutRight');
-				$('#tweetsContainer').addClass('animated fadeInRight');
-				});
+			$('#tweetsContainer').hide("slide", { direction: "right" },700,function(){
+				$('#tweetsContainer').show("slide", { direction: "left" });
+			});
 		}
 
 		$( document ).ready(function() {
-			var seconds = 5;
+			var seconds = 3;
 		    setInterval(Desaparece, seconds * 1000);		    
 		});
 	</script>
