@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
 </head>
 
 <body>
@@ -15,57 +16,74 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 tweet">
-				<div class="col-md-12 tweetBody">
-					A fight starts in the jungle and APX comes out on top with two kills! #NALCS
-				</div>
-
-				<div class="col-md-12 tweetAuthor">
-					<div class="col-md-3">
-						<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+			<div id="tweetsContainer" class="col-md-12">
+				<div class="col-md-4 tweet">
+					<div class="col-md-12 tweetBody">
+						A fight starts in the jungle and APX comes out on top with two kills! #NALCS
 					</div>
 
-					<div class="col-md-9">
-						<h3>lolesport</h3>
-						<p>@lolesport</p>
+					<div class="col-md-12 tweetAuthor">
+						<div class="col-md-3">
+							<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+						</div>
+
+						<div class="col-md-9">
+							<h3>lolesport</h3>
+							<p>@lolesport</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-md-4 tweet">
-				<div class="col-md-12 tweetBody">
-					A fight starts in the jungle and APX comes out on top with two kills! #NALCS
-				</div>
-
-				<div class="col-md-12 tweetAuthor">
-					<div class="col-md-3">
-						<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+				<div class="col-md-4 tweet">
+					<div class="col-md-12 tweetBody">
+						A fight starts in the jungle and APX comes out on top with two kills! #NALCS
 					</div>
 
-					<div class="col-md-9">
-						<h3>lolesport</h3>
-						<p>@lolesport</p>
+					<div class="col-md-12 tweetAuthor">
+						<div class="col-md-3">
+							<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+						</div>
+
+						<div class="col-md-9">
+							<h3>lolesport</h3>
+							<p>@lolesport</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="col-md-4 tweet">
-				<div class="col-md-12 tweetBody">
-					A fight starts in the jungle and APX comes out on top with two kills! #NALCS
-				</div>
-
-				<div class="col-md-12 tweetAuthor">
-					<div class="col-md-3">
-						<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+				<div class="col-md-4 tweet">
+					<div class="col-md-12 tweetBody">
+						A fight starts in the jungle and APX comes out on top with two kills! #NALCS
 					</div>
 
-					<div class="col-md-9">
-						<h3>lolesport</h3>
-						<p>@lolesport</p>
+					<div class="col-md-12 tweetAuthor">
+						<div class="col-md-3">
+							<img class="authorImage" src="images/iQknNVZ3_bigger.jpg" />
+						</div>
+
+						<div class="col-md-9">
+							<h3>lolesport</h3>
+							<p>@lolesport</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+		function Desaparece() {
+			$('#tweetsContainer').hide("slide", { direction: "right" },700,function(){
+				$('#tweetsContainer').show("slide", { direction: "left" });
+			});
+		}
+
+		$( document ).ready(function() {
+			var seconds = 3;
+		    setInterval(Desaparece, seconds * 1000);		    
+		});
+	</script>
 </body>
 </html>
