@@ -56,6 +56,15 @@
 	margin-left: -150px;
 }
 
+.twitterIcon{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}
+
 .tweetAuthor{
 	color: #B4B2B2;
 	padding: 0px;

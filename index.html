@@ -52,7 +52,10 @@
 		function getTweetHtml(tweet) {
 			var html = "";
 			html += '<div class="col-md-4 tweet">';
-				html += ('<div class="col-md-12 tweetBody">' + tweet.tweetBody +'</div>');
+				html += '<div class="col-md-12 tweetBody">'
+					html += tweet.tweetBody;
+					html += '<a href="https://twitter.com/' + tweet.author.authorId +'" target="_blank"><img class="twitterIcon" src="images/twitter-logo_318-40459.png" /></a>'
+				html += '</div>';
 				html += '<div class="col-md-12 tweetAuthor">';
 					html += '<div class="col-md-3"><img class="authorImage" src="' + tweet.author.authorImage + '" /></div>'
 					html += '<div class="col-md-9"><div class="col-md-12">' + tweet.author.authorName + '</div><div class="col-md-12">@' + tweet.author.authorId + '</div></div>'
